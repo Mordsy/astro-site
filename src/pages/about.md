@@ -6,4 +6,4 @@ title: "About"
 
 This is a Markdown page.
 
-![Test image](/astro-site/test.png)
+![Test image](../test.png)
