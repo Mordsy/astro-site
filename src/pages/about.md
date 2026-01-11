@@ -6,6 +6,7 @@ title: "About"
 
 This is a Markdown page.
 
+![Test image](/images/test.png)
 
 
 
@@ -17,5 +18,3 @@ This is a Markdown page.
 
 
 
-
-![Test image](../test.png)
