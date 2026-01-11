@@ -1,46 +1,109 @@
-# Astro Starter Kit: Basics
+# Astro GitHub Pages Template
 
-```sh
+This repository is an Astro site preconfigured to deploy to **GitHub Pages via GitHub Actions**, with automatic base-path detection based on the repo name.
+
+---
+
+## 🚀 Getting Started (after using this template)
+
+After creating a new repository from this template:
+
+### 1. Enable GitHub Pages
+
+Go to:
+
+**Settings → Pages**
+
+Under **Build and deployment**:
+
+- Set **Source** to: `GitHub Actions`
+
+### 2. Trigger a deployment
+
+Push any commit (or use the initial commit).
+
+Your site will be available at:
+
+https://<your-username>.github.io/<repo-name>/
+
+Example:
+
+https://mordsy.github.io/my-new-site/
+
+That’s it. No base-path config needed — it’s automatic.
+
+---
+
+## 💻 Local development
+
+```bash
+npm install
+npm run dev
+
+Open:
+
+http://localhost:4321
+
+Project structure
+
+Pages → src/pages
+
+Components → src/components
+
+Layouts → src/layouts
+
+Static assets → public/
+
+Static assets rule
+
+Anything in public/ is referenced like:
+
+/images/example.png
+
+
+(not relative paths like ../images/...)
+
+The correct GitHub Pages subpath is applied automatically during build.
+
+🧞 Commands
+
+All commands are run from the project root:
+
+Command	Action
+npm install	Install dependencies
+npm run dev	Start local dev server
+npm run build	Build production site to ./dist/
+npm run preview	Preview build locally
+npm run astro ...	Run Astro CLI commands
+ℹ️ Notes
+
+Deployment is handled by .github/workflows/deploy.yml
+
+GitHub Pages base path is auto-detected from the repo name during CI
+
+Favicon should remain at public/favicon.svg
+
+📚 Astro starter info (original)
+
+This project was originally created using:
+
 npm create astro@latest -- --template basics
-```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🚀 Project Structure
+Astro documentation:
 
-Inside of your Astro project, you'll see the following folders and files:
+https://docs.astro.build
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+https://astro.build/chat
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## Then commit it
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Run:
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```powershell
+git add README.md
+git commit -m "Add template usage instructions to README"
+git push
