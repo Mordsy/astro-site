@@ -18,4 +18,4 @@ This is a Markdown page.
 
 
 
-![Test png image](../test.png)
+![Test image](../test.png)
